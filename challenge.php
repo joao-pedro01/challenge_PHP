@@ -30,15 +30,13 @@
         <?php 
             if(isset($_POST["submit1"]))
             {
-                $nome = $_POST["name"];
-                $anos = $_POST["age"];
-                $mes = $anos * 12;
-                $dias = $mes * 30;
-                $horas = $dias * 24;
+                $name = $_POST["name"];
+                $age = $_POST["age"];
+                $months = $anos * 12;
+                $days = $mes * 30;
+                $hours = $dias * 24;
                 
                 echo '<p>'.$nome.' você tem '.$anos.' anos, '.$mes.' meses, '.$dias.' dias, '.$horas.' horas de vida.'.'</p>';
-                /* echo '<p>'.$dias.'</p>';
-                echo '<p>'.'Você tem '.$mes.' meses de vida'.'</p>'; */
             }else 
             {
                 echo '<p>'.'Você não digitou nada ainda.'.'</p>';
@@ -65,7 +63,7 @@
                 
                 if ($n1<=10 && $n1>=0 && $n2<=10 && $n2>=0)
                 {
-                    $m = ($n1 + $n2) / 2;
+                    $media = ($n1 + $n2) / 2;
 
                     echo "A média das notas é: ".$m;
                 }else
