@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input
-        {
+        input {
             margin-top:10px;
         }
-        input::placeholder
-        {
+        input::placeholder {
             color: gray;
         }
     </style>
