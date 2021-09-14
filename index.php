@@ -13,15 +13,15 @@
             color: gray;
         }
     </style>
+    
 </head>
 <body>
     <details>
         <summary><b>Tempo de vida</b><br></summary>
         <form method="POST">
-            
             <input type="text" name="name" placeholder="Nome" required><br>
             <input type="number" name="age" placeholder="Idade" required><br>
-            <input type="submit" name="submit1"><br>
+            <input type="submit" name="submit1">
         </form>
 
         <?php 
@@ -29,11 +29,11 @@
             {
                 $name = $_POST["name"];
                 $age = $_POST["age"];
-                $months = $anos * 12;
-                $days = $mes * 30;
-                $hours = $dias * 24;
+                $months = $age * 12;
+                $days = $months * 30;
+                $hours = $days * 24;
                 
-                echo '<p>'.$nome.' você tem '.$anos.' anos, '.$mes.' meses, '.$dias.' dias, '.$horas.' horas de vida.'.'</p>';
+                echo '<p>'.$name.' você tem '.$age.' anos, '.$months.' meses, '.$days.' dias, '.$hours.' horas de vida.'.'</p>';
             }else 
             {
                 echo '<p>'.'Você não digitou nada ainda.'.'</p>';
@@ -151,7 +151,7 @@
                 $AltMae = $_POST["AltMae"];
                 $total = ($AltMae + $AltPai) / 2 + 0.12;
                 
-                echo $total;
+                echo 'A altura máxima do seu filho será de aproximadamente de: '.$total;
             }else 
             {
                 echo '<p>'.'Você não digitou nada ainda.'.'</p>';
